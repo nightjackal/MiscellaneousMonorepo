@@ -1,0 +1,43 @@
+typedef int intBool;
+int booleanCheck(intBool boolean) {
+    if (boolean > 1) {
+        while (boolean > 0) {
+            boolean--;
+        }
+        return 1;
+    }
+    if (boolean < 0) {
+        while (boolean < 0) {
+            boolean++;
+        }
+        return 1;
+    }
+    else {
+        return 0;
+    }
+    return boolean;
+}
+
+int booleanChanger (intBool *boolean) {
+    int boolCheck = booleanCheck(*boolean);
+    if (boolCheck == 0) {
+        if (*boolean == 0) {
+            (*boolean)++;
+        }
+        else if (*boolean == 1) {
+            (*boolean)--;
+        }
+        return 0;
+    }
+    else if (boolCheck == 1) {
+        return 1;
+    }
+    else {
+        return 1;
+    }
+    return 1;
+}
+
+int booleanDisplay (intBool boolean) {
+    return boolean;
+}
