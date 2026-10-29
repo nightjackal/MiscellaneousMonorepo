@@ -4,7 +4,7 @@ import java.util.Scanner;
  * Add weight into the formula for HP damage
  * Make the names and types customizable
  */
-public class Main extends PetRunner{
+public class SchoolProjectGame extends PetRunner{
     public static void main(String[] args) {
         PetRunner petRunner = new PetRunner();
         petRunner.petRunner();
